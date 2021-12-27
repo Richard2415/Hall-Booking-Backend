@@ -14,7 +14,7 @@ const rooms = [
     roomId: "abc",
     bookingDetails: [
       {
-        customerName: "rrc",
+        customerName: "Mark",
         date: new Date("2021-11-14"),
         start: "07:00",
         end: "10:00",
@@ -30,7 +30,7 @@ const rooms = [
     roomId: "def",
     bookingDetails: [
       {
-        customerName: "rrc2",
+        customerName: "Remigiyas",
         date: new Date("2021-11-15"),
         start: "15:00",
         end: "17:00",
@@ -79,7 +79,7 @@ app.post("/bookRoom", (req, res, next) => {
         ) {
           result = 0;
           console.log("in booking");
-          
+
         } else {
           result = 1;
           rooms[i].bookingDetails.push(booking);
